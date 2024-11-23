@@ -1,11 +1,10 @@
 import tkinter as tk
 import random
 
-# Настройки
 WIDTH = 600
 HEIGHT = 400
 SNAKE_SIZE = 10
-SNAKE_SPEED = 100  # миллисекунды
+SNAKE_SPEED = 100 
 
 class SnakeGame:
     def __init__(self, master):
@@ -67,8 +66,7 @@ class SnakeGame:
             head_y -= SNAKE_SIZE
         elif self.snake_direction == 'Down':
             head_y += SNAKE_SIZE
-        
-        # Перемещение за границы
+
         head_x = head_x % WIDTH
         head_y = head_y % HEIGHT
 
